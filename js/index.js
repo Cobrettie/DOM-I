@@ -58,9 +58,14 @@ for (let i = 0; i < navItems.length; i++) {
 
 // add main heading 'DOM is awesome'
 let mainHeading = document.querySelector('h1');
-mainHeading.textContent = "DOM is awesome";
+mainHeading.textContent = siteContent.cta['h1'];
 
 
 // add header image
 let headImg = document.getElementById('logo-img');
-headImg.setAttribute('src', '../img/header-img.png');
+headImg.setAttribute('src', siteContent.cta['img-src']);
+
+
+// add main cta button text
+let ctaBtn = document.querySelector('.cta .cta-text button');
+ctaBtn.textContent = siteContent.cta['button'];
