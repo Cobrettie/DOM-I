@@ -55,3 +55,8 @@ for (let i = 0; i < navItems.length; i++) {
   navItems[i].textContent = siteContent.nav[`nav-item-${i+1}`];
 }
 
+
+// add main heading 'DOM is awesome'
+let mainHeading = document.querySelector('h1');
+mainHeading.textContent = "DOM is awesome";
+
