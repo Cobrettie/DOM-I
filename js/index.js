@@ -40,3 +40,18 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+
+// add nav item content
+let navItems = document.querySelectorAll('a');
+// brute force
+// navItems[0].textContent = "Services";
+// navItems[1].textContent = "Product";
+// navItems[2].textContent = "Vision";
+
+// a better way
+for (let i = 0; i < navItems.length; i++) {
+  navItems[i].classList.add(`nav-item-${i+1}`);
+  navItems[i].textContent = siteContent.nav[`nav-item-${i+1}`];
+}
+
