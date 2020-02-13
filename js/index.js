@@ -75,7 +75,7 @@ ctaBtn.textContent = siteContent.cta['button'];
 
 // Main Content Section
 
-// 
+// top content
 let mainContent = document.querySelectorAll('.main-content');
 let topContent = mainContent[0].querySelectorAll('.top-content');
 
@@ -84,3 +84,8 @@ topContent[0].querySelectorAll('.text-content')[0].querySelectorAll('p')[0].text
 
 topContent[0].querySelectorAll('.text-content')[1].querySelectorAll('h4')[0].textContent = siteContent['main-content']['about-h4']; // add about heading
 topContent[0].querySelectorAll('.text-content')[1].querySelectorAll('p')[0].textContent = siteContent['main-content']['about-content']; // add about paragraph
+
+
+// set middle image
+let middleImg = document.getElementById('middle-img');
+middleImg.setAttribute('src', siteContent['main-content']['middle-img-src']);
