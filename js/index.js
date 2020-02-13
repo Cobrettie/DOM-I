@@ -56,16 +56,31 @@ for (let i = 0; i < navItems.length; i++) {
 }
 
 
+// CTA section
+
 // add main heading 'DOM is awesome'
 let mainHeading = document.querySelector('h1');
 mainHeading.textContent = siteContent.cta['h1'];
 
 
 // add header image
-let headImg = document.getElementById('logo-img');
+let headImg = document.getElementById('cta-img');
 headImg.setAttribute('src', siteContent.cta['img-src']);
 
 
 // add main cta button text
 let ctaBtn = document.querySelector('.cta .cta-text button');
 ctaBtn.textContent = siteContent.cta['button'];
+
+
+// Main Content Section
+
+// 
+let mainContent = document.querySelectorAll('.main-content');
+let topContent = mainContent[0].querySelectorAll('.top-content');
+
+topContent[0].querySelectorAll('.text-content')[0].querySelectorAll('h4')[0].textContent = siteContent['main-content']['features-h4']; // add features heading
+topContent[0].querySelectorAll('.text-content')[0].querySelectorAll('p')[0].textContent = siteContent['main-content']['features-content']; // add features paragraph
+
+topContent[0].querySelectorAll('.text-content')[1].querySelectorAll('h4')[0].textContent = siteContent['main-content']['about-h4']; // add about heading
+topContent[0].querySelectorAll('.text-content')[1].querySelectorAll('p')[0].textContent = siteContent['main-content']['about-content']; // add about paragraph
