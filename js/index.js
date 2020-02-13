@@ -89,3 +89,19 @@ topContent[0].querySelectorAll('.text-content')[1].querySelectorAll('p')[0].text
 // set middle image
 let middleImg = document.getElementById('middle-img');
 middleImg.setAttribute('src', siteContent['main-content']['middle-img-src']);
+
+
+// set bottom content
+let bottomContent = mainContent[0].querySelectorAll('.bottom-content');
+
+// add services block
+bottomContent[0].querySelectorAll('.text-content')[0].querySelectorAll('h4')[0].textContent = siteContent['main-content']['services-h4'];
+bottomContent[0].querySelectorAll('.text-content')[0].querySelectorAll('p')[0].textContent = siteContent['main-content']['services-content'];
+
+// add product block
+bottomContent[0].querySelectorAll('.text-content')[1].querySelectorAll('h4')[0].textContent = siteContent['main-content']['product-h4'];
+bottomContent[0].querySelectorAll('.text-content')[1].querySelectorAll('p')[0].textContent = siteContent['main-content']['product-content'];
+
+// add vision block
+bottomContent[0].querySelectorAll('.text-content')[2].querySelectorAll('h4')[0].textContent = siteContent['main-content']['vision-h4'];
+bottomContent[0].querySelectorAll('.text-content')[2].querySelectorAll('p')[0].textContent = siteContent['main-content']['vision-content'];
