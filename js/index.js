@@ -146,3 +146,4 @@ let footer = document.querySelector('footer');
 
 footer.querySelector('p').textContent = siteContent['footer']['copyright'];
 
+// mvp complete 2/12/20 9:16pm 
