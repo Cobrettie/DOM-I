@@ -105,3 +105,17 @@ bottomContent[0].querySelectorAll('.text-content')[1].querySelectorAll('p')[0].t
 // add vision block
 bottomContent[0].querySelectorAll('.text-content')[2].querySelectorAll('h4')[0].textContent = siteContent['main-content']['vision-h4'];
 bottomContent[0].querySelectorAll('.text-content')[2].querySelectorAll('p')[0].textContent = siteContent['main-content']['vision-content'];
+
+
+// CONTACT section
+let contact = document.querySelector('.contact');
+
+contact.querySelectorAll('h4')[0].textContent = siteContent['contact']['contact-h4']; // contact header
+contact.querySelectorAll('p')[0].textContent = siteContent['contact']['address']; // contact address
+contact.querySelectorAll('p')[1].textContent = siteContent['contact']['phone']; // contact phone
+contact.querySelectorAll('p')[2].textContent = siteContent['contact']['email']; // contact email
+
+
+// FOOTER
+
+
