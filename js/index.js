@@ -60,3 +60,7 @@ for (let i = 0; i < navItems.length; i++) {
 let mainHeading = document.querySelector('h1');
 mainHeading.textContent = "DOM is awesome";
 
+
+// add header image
+let headImg = document.getElementById('logo-img');
+headImg.setAttribute('src', '../img/header-img.png');
