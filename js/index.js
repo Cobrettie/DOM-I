@@ -53,7 +53,14 @@ let navItems = document.querySelectorAll('a');
 for (let i = 0; i < navItems.length; i++) {
   navItems[i].classList.add(`nav-item-${i+1}`);
   navItems[i].textContent = siteContent.nav[`nav-item-${i+1}`];
+  navItems[i].classList.add('nav-item'); // task 3, add specific class to each nav-item to allow for easier styling
 }
+
+let navItem = document.querySelectorAll('.nav-item');
+navItem.forEach(item => {
+  item.style.color = 'green';
+})
+
 
 
 // CTA section
