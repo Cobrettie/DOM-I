@@ -117,5 +117,7 @@ contact.querySelectorAll('p')[2].textContent = siteContent['contact']['email']; 
 
 
 // FOOTER
+let footer = document.querySelector('footer');
 
+footer.querySelector('p').textContent = siteContent['footer']['copyright'];
 
